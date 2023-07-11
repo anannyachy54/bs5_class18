@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Class 18</title>
+    <style>
+        h2 {
+           background-color: aquamarine;}
+        p {background-color:cadetblue;}
+      </style>
+  </head>
+  <body>
+<h2 align="center">Modal</h2>
+    <div class="container mt-3">
+        <button class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#modal">
+            Sign Up
+        </button>
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Free Sign Up</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <form action="#">
+                            <label for="">Email:</label>
+                            <input type="email" placeholder="example@gmail.com" required><br><br>
+                            <label for="">Password:</label>
+                            <input type="password" required>
+                        </form>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit error numquam dolorem tempore fugit deserunt sed dolorum distinctio odit alias quo modi nobis impedit aut quis, iusto eaque quam, officiis quasi? Eum earum blanditiis dolorum ut quam esse? Recusandae tempora laborum iure quibusdam ex deleniti cum fuga omnis asperiores nam, dolorum perspiciatis delectus voluptates veritatis deserunt ab aut non earum amet rerum porro sapiente consequuntur ipsum? Veritatis beatae sunt doloremque corrupti omnis! Fugit vel accusantium consequuntur repellat quia quisquam, dolore in. Quibusdam placeat aspernatur nesciunt explicabo perspiciatis aut nostrum obcaecati non qui autem sit, quaerat tempora quisquam. Mollitia, voluptatibus perferendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nostrum dignissimos nam officiis. Nostrum minus voluptatem quis nemo quaerat at quidem doloremque deleniti obcaecati, sit rerum incidunt fugiat architecto, iste ex cumque quos ab quia corporis aperiam voluptate fuga asperiores atque! Rem, aspernatur earum asperiores dolores optio nam quidem cupiditate modi necessitatibus, in mollitia ullam assumenda distinctio repudiandae provident porro repellat officiis perferendis eaque, quo nobis autem. Ad ullam unde sequi at reiciendis, similique hic atque recusandae. Ipsa temporibus vero doloremque eligendi quam dolor obcaecati, numquam dicta, omnis aperiam aliquid alias iusto eveniet, fugiat voluptates rerum architecto nostrum beatae sit.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-bs-dismiss="">Close</button>
+                            <button class="btn btn-danger">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> <br>
+<h2 align="center">Tooltips</h2>
+   <div class="container mt-3">
+  <button class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="This is Tooltip">
+    Hover Me
+  </button>
+   </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+    </script>
+  </body>
+</html>
